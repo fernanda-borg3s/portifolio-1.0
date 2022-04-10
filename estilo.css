@@ -311,6 +311,7 @@ div.text-proj:hover h1, div.text-proj:hover p, div.text-proj:hover footer{
     padding: 10px 20px;
  }
  .nav-links{
+  display: none;
   position: absolute;
   background: #143601;
   height: 100vh;

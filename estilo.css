@@ -9,7 +9,7 @@
 body{
   background: linear-gradient(#143601,#538D22, #AAD576);
 }
-.header{
+.header, .header-proj{
     height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgb(4,9,30,0.7),rgba(4,9,30,0.7),rgba(4,9,30,0.7), #143601),url(banner1.png);
@@ -340,6 +340,9 @@ div.text-proj:hover h1, div.text-proj:hover p, div.text-proj:hover footer{
   div.cards{
     display: flex;
     flex-direction: column;
+  }
+   .header-proj{
+    height: 200vh;
   }
   section#projetos{
     top: 100px;

@@ -302,10 +302,10 @@ div.text-proj:hover h1, div.text-proj:hover p, div.text-proj:hover footer{
 }
 @media(max-width: 750px){
   div.text-central h2, div.text-central h3{
-    font-size: 30px;
+    font-size: 29px;
 }
  div.text-central h1{
-    font-size: 45px;
+    font-size: 34px;
 }
   .nav-links ul li{
     padding: 10px 20px;
@@ -327,11 +327,10 @@ div.text-proj:hover h1, div.text-proj:hover p, div.text-proj:hover footer{
     margin: 10px;
     font-size: 30px;
     cursor: pointer;
-
 }
   a.btn-dowloand{
-    width: 25%;
-    height: 7vh;
+     width: 200px;
+    height: 60px;
     margin-top: -10px;
     font-size: 16px;
   }
@@ -341,11 +340,9 @@ div.text-proj:hover h1, div.text-proj:hover p, div.text-proj:hover footer{
   div.cards{
     display: flex;
     flex-direction: column;
-
   }
   section#projetos{
-    top: 10%;
-
+    top: 100px;
   }
   div#container-projeto{
     flex-direction: column;

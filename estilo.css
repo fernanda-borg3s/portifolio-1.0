@@ -223,7 +223,7 @@ div.ingles, div.informatica{
 .css-bar{width: 70%;}
 .node-bar{width: 28%;}
 .bd-bar{width: 20%;}
-.react-bar{width: 5%;}
+.react-bar, .swift-bar{width: 5%;}
 .info-bar{width: 100%;}
 footer{
   text-align: center;

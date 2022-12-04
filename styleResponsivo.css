@@ -90,11 +90,19 @@ i.bi-list{
         font-size: 0.8rem;
     
     }
-    #box-habilidade .card3 h1,  #box-habilidade .card2 h1{
+    #box-habilidade .card3 h1, #box-habilidade .card3 h3, #box-habilidade .card2 h1, .txt{
         font-size: 1rem;
     }
     #box-habilidade .card2, #box-habilidade .card3{
         width: 83%;
+    }
+    .container-html{
+        width: 30%;
+
+    }
+    .box-caixa2 img{
+        width: 50%;
+        /* flex-direction: row; */
     }
 }
 @media(max-width: 800px){

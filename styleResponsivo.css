@@ -72,6 +72,10 @@ i.bi-list{
 }
 /* RESPONSIVIDIDADE INDEX HTLM */
 @media(max-width:500px){
+    section#landpage{
+    height: 100vh;
+
+    }
     section#landpage h3{
         font-size: 2.5rem;
      }
@@ -89,7 +93,9 @@ i.bi-list{
     #box-habilidade .card3 h1,  #box-habilidade .card2 h1{
         font-size: 1rem;
     }
-    
+    #box-habilidade .card2, #box-habilidade .card3{
+        width: 83%;
+    }
 }
 @media(max-width: 800px){
     div.logoPequena img{

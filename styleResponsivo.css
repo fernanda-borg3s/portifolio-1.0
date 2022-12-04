@@ -82,6 +82,9 @@ i.bi-list{
      section#landpage h1{
         font-size: 3.5rem;
      }
+     div.logoMaior{
+        display: none;
+     }
      #box-formacao h1{
         font-size: 1.5rem;
 
@@ -90,7 +93,7 @@ i.bi-list{
         font-size: 0.8rem;
     
     }
-    #box-habilidade .card3 h1, #box-habilidade .card3 h3, #box-habilidade .card2 h1, .txt{
+    #box-habilidade .card3 h1, #box-habilidade .card3 h3, #box-habilidade .card2 h1, .container-sobre div#txt-sobre{
         font-size: 1rem;
     }
     #box-habilidade .card2, #box-habilidade .card3{

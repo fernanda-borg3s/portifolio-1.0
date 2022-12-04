@@ -233,7 +233,7 @@ div.box-sobre{
     flex-wrap: wrap;
 }
 .card2 h1, .card3 h1{
-    font-size: 28px !important;
+    /* font-size: 28px; */
     color: #fff !important;
     margin-bottom: 25px;
 }

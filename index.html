@@ -1,141 +1,185 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="estilo.css">
-    <script src="https://kit.fontawesome.com/3f480f552a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleResponsivo.css">
     <script src="portifolio.js" defer></script>
     <title>Fernanda Borges</title>
 </head>
 <body>
-    <section class="header">
-        <nav>
-            <a href="" target="_blank"><img class="logo" src="img/logo.png" alt="" srcset=""></a> 
-            <div class="nav-links" id="navLinks">
-               <i class="fa fa-times" onclick="hideMenu()"></i>
+    <nav id="nav">
+         <div class="logoPequena">
+            <img src="img/LogoDarkTheme.png" alt="" srcset="">
+         </div>
+         <div class="nav-links" id="navlinks">
+            <button id="btn-mobile" >
+            <i class="bi bi-list" ></i>
+            </button>
+            <ul id="menu">
+
+                <li> <a href="#">Home</a></li>
+                 <li ><a href="#sobre">Sobre</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li> <a href="">
+                    <div class="img-change">
+                        <input type="checkbox" class="checkbox" id="chk">
+                        <label for="chk" class="label">
+                            <i class="bi bi-brightness-high-fill"></i>
+                            <i class="bi bi-moon-fill"></i>
+                            <div class="ball"></div>
+                        </label>
+                    </div>
+               </a> </li>
+            </ul>
+         </div>
+    </nav>
+    <section id="landpage">
+        <div class="introducao">
+            <h3>Olá, eu sou a</h3>
+            <h1 class="anima-nome">Fernanda Borges</h1>
+            <h3>Desenvolvedora Web</h3>
+            <div class="btn-baixar-contato">
+                <button class="btn-baixar"><a href="FernandaBorges-Currículo.pdf" download="FernandaBorges-Currículo2.pdf" type="application/pdf">Baixar currículo</a></button>
+                <button class="btn-baixar">Entrar em contato</button>
+            </div>
+        </div>
+        <div class="logoMaior">
+            <img src="img/logoPequena.svg" class="img-inicial" alt="" srcset="">
+        </div>
+    </section>
+    <section id="sobre">
+        <h1>Sobre</h1>
+        <div class="box-sobre">
+            <div class="container-sobre">
+                <div class="box-img">
+                    <img src="img/picProfile.png" alt="" srcset="">
+                </div>
+                <div class="txt" id="txt-sobre"> 
+                    <p>Olá, meu nome é Fernanda e eu sou uma desenvolvedora web. Sou técnica em Desenvolvimento de sistema para Web e atualmente estou cursando, nível superior, em Sistemas para Internet. Ainda não tenho muita experiência profissional nessa área, mas tenho muita vontade de adquirir aprendizado profissional prático e procuro oportunidade para crescer e desenvolver meus conhecimentos adquiridos. Possuo curso avançado de inglês e tenho um entendimento e oralidade razoável da língua. Sou uma pessoa dinâmica, organizada, inovadora, criativa e me considero apta para contribuir com demandas. Tenho capacidade de aprender com facilidade e estou sempre em busca de aprendizado contínuo.</p>
+                </div>
+                <div class="box-academica" id="box-formacao" onclick="btnForma()"> 
+                    <h1>Formação Acadêmica</h1>
+                        <div class="card1">
+                            <div class="txt-formacao">
+                                <h3><img src="img/icone-form.png" alt=""> Tecnólogo em Sistema para Internet</h3>
+                                <h4>Instituto Ferderal de Brasília (IFB)</h4>
+                                <p>Cursando</p>
+                            </div>
+                            <div class="txt-formacao">
+                                <h3><img src="img/icone-form.png" alt=""> Técnico em Desenvolvimeto de Sistema para Web</h3>
+                                <h4>Instituto Ferderal de Brasília (IFB)</h4>
+                                <p>02/2020 à 09/2021</p>
+                            </div>
+                            <div class="medio-text">
+                                 <h3><img src="img/icone-form.png" alt="">Ensino médio</h3>
+                                 <p>Concluido em 2018</p>
+                            </div>
+                        </div>  
+                </div>
+                <div class="box-skills" id="box-habilidade">
+                    <div class="card2">
+                        <h1>Habilidades Técnicas</h1>
+                            <div class="box-caixa2">
+                                <div class=""></div>
+                                <div class="container-html">  
+                                    <img src="img/html.png" alt="" srcset="">
+                                </div>
+                                <div class=""></div>
+                                <div class="container-html">  
+                                    <img src="img/css.png" alt="" srcset="">
+                                </div>
+                                <div class=""></div>
+                                <div class="container-html">  
+                                    <img src="img/js.png" alt="" srcset="">
+                                </div>
+                                <div class=""></div>
+                                <div class="container-html">  
+                                    <img src="img/jque.png" alt="" srcset="">
+                                </div>
+                                <div class=""></div>
+                                <div class="container-html">  
+                                    <img src="img/node.png" alt="" srcset="">
+                                </div>
+                                <div class=""></div>
+                                <div class="container-html">  
+                                    <img src="img/bd.png" alt="" srcset="">
+                                </div>
+                            </div>
+                    </div>
+                    <div class="card3">
+                        <h1>Outros Cursos/ Certificados</h1>
+                        <div class="box-outro-curso">
+                            <div class="cursos-text">
+                                <h3>Inglês</h3>
+                                <p>Avançado</p>
+                           </div>
+                           <div class="cursos-text">
+                            <h3>Informática</h3>
+                            <p>Curso - Básico</p>
+                       </div>
+                       <div class="cursos-text">
+                        <h3>Swift</h3>
+                        <p>Introdução</p>
+                        </div>
+                        <div class="cursos-text">
+                            <h3>Inovando Com CSS</h3>
+                            <p>Fundação Bradesco</p>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-btn-sobre">
+                <button id="btn-sobre" onclick="abrirSobre()">Sobre</button>
+                <button id="btn-formação" onclick="abrirFormacao()">Formação</button>
+                <button id="btn-habilidades" onclick="abrirHabilidade()">Habilidades</button>
+            </div>
+        </div>
+    </section>
+    <div class="box-onda">
+        <div class="draw-onda">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="container-link-footer">
+            <div class="logoMaior-footer">
+                <img src="img/LogoFinal.png" alt="" srcset="">
+            </div>
+            <div class="menu-link">
+                <h2>Menu</h2>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#info">Informação</a></li>
-                    <li> <a href="projeto.html">Projetos</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li> <a href="#sobre">Sobre</a></li>
+                    <li> <a href="#sobre" onclick="abrirFormacao()">Formação</a></li>
+                    <li> <a href="#sobre" onclick="abrirHabilidade()">Habilidades</a></li>
+                    <li>  <a href="projetos.html">Projetos</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i> 
-        </nav>
-        <div id="container">
-            <div class="img-central"><img src="img/photo.png" alt="" srcset=""></div>
-            <div class="text-central">
-                <h2>Olá, eu sou a</h2>
-                <h1 class="anima">Fernanda Borges</h1>
-                <h3>Desenvolvedora Web</h3>
+            
+            <div class="btn-baixo">
+                <button class="btn-baixar" id="btn-baixar-down"><a href="FernandaBorges-Currículo.pdf" download="FernandaBorges-Currículo2.pdf" type="application/pdf">Baixar currículo</a></button>
+                <button id="btn-contato-down">Entrar em contato</button>
             </div>
-            <a class="btn-dowloand" href="FernandaBorges-Currículo2.pdf" download="FernandaBorges-Currículo2.pdf" type="application/pdf"><button>Baixar Currículo</button></a>
-            <div class="box-icon">
-                <a href="https://www.instagram.com/fernandab_code/" class="ig-icon" target="_blank" ><img src="img/ig.png" alt="" srcset=""></a>
-                <a href="https://github.com/fernanda-borg3s" target="_blank" class="git-icon"><img src="img/git.png" alt="" srcset=""></a>
-                <a href="http://linkedin.com/in/fernanda-borges-512b4a1b8" target="_blank" ><img src="img/linkedin.png" alt="" srcset=""></a>
-                <a href="http://" target="_blank" ><img src="img/share.png" alt="" srcset=""></a>
-            </div>
+       
+            <div class="container-social">
+                <a href="https://github.com/fernanda-borg3s" target="_blank"><img src="img/github.png" alt="" srcset=""></a>
+                <a href="https://www.instagram.com/fernandab_code/" target="_blank"><img src="img/insta.png" alt="" srcset=""></a>
+                <a href="https://codepen.io/fernanda-borg3s" target="_blank"><img src="img/codepen.png" alt="" srcset=""></a>
+                <a href="https://www.linkedin.com/in/fernanda-borges-512b4a1b8/" target="_blank"><img src="img/linkedin.png" alt="" srcset=""></a>
+               </div>
+        
         </div>
-    </section>
-    <section id="info">
-        <div class="cards">   
-            <div class="card1">
-               <h1>Formação Acadêmica</h1>
-               <div class="tecnico-text">
-                <h3><img src="img/icone-form.png" alt=""> Tecnólogo em Sistema para Internet</h3>
-                    <h4>Instituto Ferderal de Brasília (IFB)</h4>
-                        <p>Cursando</p>
-            </div>
-               <div class="tecnico-text">
-                    <h3><img src="img/icone-form.png" alt=""> Técnico em Desenvolvimeto de Sistema para Web</h3>
-                        <h4>Instituto Ferderal de Brasília (IFB)</h4>
-                            <p>02/2020 à 09/2021</p>
-                </div>
-                <div class="medio-text">
-                    <h3><img src="img/icone-form.png" alt="">Ensino médio</h3>
-                    <p>Concluido em 2018</p>
-                </div>
-            </div>
-        <div class="card2">
-            <h1>Habilidades Técnicas</h1>
-            <div class="box-caixa2">
-                <h3>HTML5</h3>
-                <div class="container-bar bar-html">
-                    <div class="progress-bar html-bar"></div>
-                </div>
-                <h3>CSS3</h3>
-                <div class="container-bar ">
-                    <div class="progress-bar css-bar"></div>
-                </div>
-                <h3>JavaScript</h3>
-                <div class="container-bar">
-                    <div class="progress-bar js-bar"></div>
-                </div>
-               <h3> JQuery</h3>
-                <div class="container-bar">
-                    <div class="progress-bar jq-bar"></div>
-                </div>
-                <h3>Node.js</h3>
-                <div class="container-bar">
-                    <div class="progress-bar  node-bar"></div>
-                </div>
-                 <h3>React</h3>
-                <div class="container-bar">
-                    <div class="progress-bar  react-bar"></div>
-                </div>
-               <h3>Banco de Dados</h3>
-                <div class="container-bar">
-                    <div class="progress-bar bd-bar"></div>
-                </div>
-            </div>
+    </div>
+    <footer>
+        <div class="logopequna-footer">
+            <img src="img/LogoDarkTheme.png" alt="" srcset="">
         </div>
-        <div class="card3">
-            <h1>Outros Cursos</h1>
-            <div class="ingles">
-                <h3> Inglês Avançado </h3>
-                 <div class="container-bar">
-                     <div class="progress-bar en-bar"></div>
-                 </div>
-             </div>
-             <div class="informatica">
-                <h3>Curso Básico em Informática</h3>
-                 <div class="container-bar">
-                     <div class="progress-bar info-bar"></div>
-                 </div>
-             </div>
-        </div>
-        <div class="card4">
-            <h1>Sobre mim</h1>
-            <p class="text-about-me">Olá, meu nome é Fernanda e eu sou uma desenvolvedora web. Sou técnica em Desenvolvimento de sistema para Web e atualmente estou 
-                cursando, nível superior, em Sistemas para Internet. 
-                Ainda não tenho muita experiência profissional nessa área, mas tenho muita vontade de
-                adquirir aprendizado profissional prático e procuro oportunidade para crescer e desenvolver meus conhecimentos adquiridos. Possuo curso avançado de 
-                inglês e tenho um entendimento e oralidade razoável da língua.
-                Sou uma pessoa dinâmica, organizada, inovadora, criativa e me considero apta para 
-                contribuir com demandas. Tenho capacidade de aprender com facilidade e estou sempre em busca de aprendizado contínuo. <br>
-                Confira alguns projetos desenvolvidos por mim em "Meus Projetos".
-            </p>     
-            </p>
-        </div>
-        <div class="card5">
-            <a href="projeto.html">
-            <h1>Meus Projetos</h1>
-            <div class="img">
-               <img src="img/relogio.png" alt="">
-               <img src="img/playquiz.png" alt="">
-               <img src="img/todolist.png" alt="">
-               <img src="img/integrado.png" alt="">
-               <img src="img/cafeshop.png" alt="">
-               <img src="img/instituto.png" alt="">
-               <img src="img/adivinhenumero.png" alt="">
-             </div>
-        </div>
-        </a>
-        </div>
-    </section>
-  <footer>&copy; Desenvolvido por Fernanda Borges</footer>
+        <div class="txt-footer"><p>Desenvolvido por Fernanda borges | 2022</p></div>
+        <div class="txtVersao-footer"><p>v.2.0</p></div>
+    </footer>
 </body>
 </html>

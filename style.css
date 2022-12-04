@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Rubik:wght@300;400;500;600;700&display=swap');
+ @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+*{
+    font-family: 'Rubik', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+/* **********ESTILO DARK MODE ***********/
+:root{
+    --first-color:#073B3A;
+    --second-color:#08A045;
+    --dark-mode:#121212;
+    --light-mode:#fff;
+    --letter-change-color:#073b3a;
+}
+html{
+    scroll-behavior: smooth;
+}
+html[data-theme="dark"]{
+    background-color: var(--dark-mode);
+    color: var(--light-mode);
+    --letter-change-color:#fff;
+}
+/* **********BTN DARK MODE LIGHT MODE***********/
+
+i.bi-brightness-high-fill{
+    padding-left: 3px;
+
+}
+i.bi-brightness-high-fill,  i.bi-moon-fill{
+  font-size: 22px;
+}
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+.label{
+    /* background-color:#fff; */
+    border: 2px solid #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+    position: relative;
+    width: 65px;
+    /* transform: scale(1.5); */
+}
+.label .ball{
+    background-color:var(--second-color);
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 28px;
+    height:28px;
+    transform: translateX(0px);
+    transition:transform 0.2s linear ;
+}
+.checkbox:checked + .label .ball{
+    transform:translateX(38px);
+}
+
+/* **********FIM***********/
+
+/* **********NAV***********/
+nav{
+    width: 100vw;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px;
+    background-color: var(--first-color);
+    position:fixed;
+}
+div.logoPequena img{
+    width: 150px;
+    margin-left: 110px;
+}
+.nav-links{
+    margin-right: 90px;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 15px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    /* padding: 13px 10px; */
+    font-size: 29px;
+    transition: 0.4s;
+}
+.nav-links ul li:not(:last-child) a:hover{
+    color: var(--second-color);
+}
+/* **********FIM***********/
+section#landpage{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+div.introducao{
+    width: 100%;
+    margin-top: 200px;
+    margin-left: 150px;
+    max-width: 655px;
+    color:var(--letter-change-color);
+}
+#landpage h1{
+    font-size: 7rem;
+    color:var(--second-color);
+    margin: 0;
+    font-family: 'League Gothic', sans-serif;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+#landpage h3{
+    font-size: 3.4rem;
+    margin:0;
+}
+.logoMaior{
+    margin: 6.25em 0 0 9.5em;
+}
+.logoMaior img{
+    width: 80%;
+}
+div.btn-baixar-contato{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0;
+}
+div.btn-baixar-contato button, #btn-baixar-down, #btn-contato-down{
+    width: 250px;
+    height: 60px;
+    margin:10px;
+    background: var(--first-color);
+    border: 2px solid #fff;
+    border-radius: 28px;
+    color:#fff;
+    font-size:25px;
+}
+button.btn-baixar a {
+    color:#fff;
+
+}
+div.btn-baixar-contato button:hover{
+    background-color: var(--second-color);
+}
+section#sobre{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+#sobre h1{
+    font-size:3rem;
+    color:var(--letter-change-color);
+    letter-spacing: 5px;
+    text-align: center;
+    
+}
+div.container-sobre{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px 0 0 30px;
+}
+ .box-img img{
+    width:300px;
+    border: 5px solid var(--second-color);
+}
+
+div.box-sobre{
+    width: 80%;
+    background-color: #0B6E4F;
+    margin-top: 1%;
+}
+.txt{
+    margin:4.6em
+}
+.txt p {
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 1px;
+    max-width: 100%;
+    text-align: justify;
+}
+ div#box-habilidade, div#box-formacao{
+    display: none;
+}
+.box-academica h1{
+    color: #fff !important;
+}
+.card1{
+    padding-top: 25px;
+    font-size: 24px ;
+    max-width: 800px;
+}
+.box-academica h3{
+    color: #fff;
+    letter-spacing: 2px;
+}
+.box-academica h4{
+    letter-spacing: 1px;
+    color: #121212;
+}
+.box-academica p{
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.705);
+    padding: 10px 0;
+}
+#box-habilidade, .box-caixa2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card2 h1, .card3 h1{
+    font-size: 28px !important;
+    color: #fff !important;
+    margin-bottom: 25px;
+}
+.card2, .card3{
+    width: auto;
+    height:auto;
+    background-color: #08a04587;
+   padding: 10px;
+   margin: 10px 50px;
+   border-radius: 20px;
+}
+.box-outro-curso{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+    padding:20px;
+}
+.card3 h3{
+    color: #fff;
+    font-size: 25px;
+}
+.card3 p {
+    color: #121212;
+}
+.box-caixa2 img{
+    width: 90px;
+    margin:5px;
+}
+div.box-btn-sobre{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+}
+.box-btn-sobre button{
+    width: calc(100% /3);
+    height: 70px;
+    font-size: 2.5rem;
+    background-color: var(--second-color);
+    color: #fff;
+    border: 0.2px solid var(--first-color);
+    padding: 10px;
+}
+.box-btn-sobre button:hover{
+    background-color: #073b3aa4;
+}
+.box-onda{
+    margin-top: 5%; 
+}
+.draw-onda {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.draw-onda svg {
+    position: relative;
+    display: block;
+    width: calc(125% + 1.3px);
+    height: 172px;
+}
+.draw-onda .shape-fill {
+    fill: var(--first-color);
+}
+.container-link-footer{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom:30px;
+    width: 100%;
+    background-color:var(--first-color);
+    flex-wrap: wrap;
+    gap:2em;
+}
+.menu-link{
+    font-size: 2rem;
+}
+.menu-link h2, .menu-link a{
+    text-align: left;
+    color: #fff;
+}
+.menu-link ul{
+    list-style-type: none;
+    margin: 0;
+}
+.menu-link a:hover{
+    color: #08A045;
+}
+.btn-baixo{
+    display: flex;
+    flex-direction: column;
+}
+#btn-baixar-down, #btn-contato-down{
+    background: var(--second-color);
+}
+#btn-baixar-down:hover, #btn-contato-down:hover{
+    background-color: #08a04590;
+}
+.logoMaior-footer img{
+    width: 300px;
+}
+.container-social{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--first-color);
+}
+.container-social a {
+    margin: 5px 10px;
+    color: #fff;
+    font-size: 22px;
+}
+.container-social a img{
+    width: 60px;
+    transition: .5s;
+}
+.container-social a:hover{
+    transform: scale(1.01);
+    color: var(--second-color);
+}
+footer{
+    width: 100%;
+    height: 80px;
+    background-color:var(--first-color);
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   font-size: 2rem;
+   color: #fff;
+   letter-spacing: 2px;
+   margin: 0;
+}
+footer img{
+    width: 100px;
+}
+/************************** MEUS PROJETOS ***************************/
+div.title-projec{
+    width: 100%;
+    padding-top: 150px;
+    text-align: center;
+    font-size: 25px;
+}
+div.title-projec h1{
+    font-size: 5rem !important;
+}
+div.title-projec h1, div.texto-projec h1{
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 3rem;
+    text-align: center;
+}
+div.texto-projec p{ 
+    max-width: 700px;
+    font-size: 22px;
+    text-align: justify;
+    padding: 5px;
+}
+section#projetos{
+    width: 100%;
+    margin-top: 100px;
+    padding: 10px;
+
+}
+.andamento, .projec-5, .projec-4, .projec-3, .projec-2, .projec-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 20px;
+}
+
+section#projetos img{
+    width: 300px;
+}
+div.box-btn-projec{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.andamento a button#btn-conferir{
+    width: 250px;
+    height: 60px;
+    padding: 10px;
+}
+div.texto-projec a button{
+    width: 125px;
+    height: 45px;
+    font-size: 25px;
+    margin: 10px;
+   background-color: var(--first-color);
+   color: #fff;
+   letter-spacing: 2px;
+   border-radius: 10px;
+   border: 2px solid #fff;
+}
+div.texto-projec a button:hover{
+    background-color: var(--second-color);
+}

@@ -1,0 +1,136 @@
+ /***** ANIMAÇAO TITULO H1 LANDPAGE ********/
+.anima-nome{
+    border-right: 2px solid transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: type 4s steps(44) 1s 1 normal both,
+             blinkCursor 500ms steps(44) infinite normal;
+}
+@keyframes type{
+    from{
+      width: 0;
+    }
+    to{
+      width: 100%;
+    }
+  }
+  @keyframes blinkCursor{
+    from{
+      border-right-color:var(--first-color);
+    }
+    to{
+      border-right-color: transparent;
+    
+    }
+  }
+ /***** FIM - ANIMAÇAO TITULO H1 LANDPAGE ********/
+
+ /*****8 MENU MOBILE ********/
+i.bi-list{
+    font-size: 3rem;
+    color: #fff;
+}
+#btn-mobile{
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+    
+@media (max-width: 800px){
+    nav{
+        position: none;
+    }
+    #btn-mobile{
+        display: block;
+        margin-right:2rem;
+    }
+    #menu{
+        display: none;
+        z-index: 1000;
+        /* display: block; */
+        
+    }
+    #nav.active #menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width:50%;
+        right: 0;
+        top:85px;
+        background-color: var(--first-color);
+        height: 100vh;
+    }
+  
+    #menu li {
+        padding: 1.5rem 0;
+        margin:0 2rem;
+        border-bottom: 1px solid var(--second-color);
+        font-size: 29px;
+    cursor: pointer;
+    }
+
+}
+/* RESPONSIVIDIDADE INDEX HTLM */
+@media(max-width: 800px){
+    div.logoPequena img{
+        margin-left: 30px;
+        padding: 0;
+    }
+ 
+  div.introducao{
+    /* width: 100vw; */
+    margin-left: 0px;
+    margin-top: 200px;
+  }
+ 
+  div.logoMaior{
+    margin-top:0px;
+  }
+  .box-img img{
+    width:150px;
+}
+div.container-sobre{
+    flex-direction: column;
+    margin:10px;
+}
+#box-habilidade{
+    margin: 0;
+    height: auto;
+}
+.card2, .card3{
+    width: 350px;
+    height: 300px;
+    /* top: 10px; */
+    margin: 10px 0;
+}
+div.box-btn-sobre{
+    flex-direction: column;
+    
+}
+.box-btn-sobre button{
+    width: 100%;
+}
+/*************footer************/
+.container-link-footer{
+   align-items: center;
+}
+.draw-onda svg {
+
+    height: 200px;
+   z-index: -1;
+}
+footer{
+    font-size: 1.2rem;
+    }
+}
+/* RESPOSIVIDADE PROJETOS.HTML */
+@media (max-width:900px){
+    .nav-links{
+        margin: 0;
+    }
+    .andamento, .projec-5, .projec-4, .projec-3, .projec-2, .projec-1{
+        flex-wrap: wrap;
+        gap:50px;
+        margin-top: 20px;
+    }
+}

@@ -72,10 +72,7 @@ i.bi-list{
 }
 /* RESPONSIVIDIDADE INDEX HTLM */
 @media(max-width:500px){
-    section#landpage{
-    height: 100vh;
-
-    }
+   
     section#landpage h3{
         font-size: 2.5rem;
      }
@@ -109,6 +106,10 @@ i.bi-list{
     }
 }
 @media(max-width: 800px){
+    section#landpage{
+        height: 100vh;
+    
+        }
     div.logoPequena img{
         margin-left: 30px;
         padding: 0;
@@ -121,7 +122,13 @@ i.bi-list{
   }
  
   div.logoMaior{
-    margin-top:0px;
+    margin-top:1rem;
+
+  }
+  div.logoMaior img{
+    /* margin-top:0px; */
+    width: 50%;
+
   }
   .box-img img{
     width:150px;

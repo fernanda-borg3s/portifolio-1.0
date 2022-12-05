@@ -89,5 +89,10 @@ const menuMobile = document.getElementById('btn-mobile');
     }
 menuMobile.addEventListener('click', alternaMenu)
 
+const btnEmail = ()=>{
+    location.href = "mailto:fernandaborgesb4@gmail.com";
 
 
+}
+document.getElementById('btn-baixar').addEventListener('click', btnEmail);
+document.getElementById('btn-contato-down').addEventListener('click', btnEmail);

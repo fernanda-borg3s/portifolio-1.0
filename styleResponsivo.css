@@ -35,8 +35,48 @@ i.bi-list{
     background-color: transparent;
     border: none;
 }
-    
+/* @media (max-width: 1000px){
+
+} */
 @media (max-width: 800px){
+    
+
+}
+/* RESPONSIVIDIDADE INDEX HTLM */
+
+@media(max-width:600px){
+    section#landpage h3{
+        font-size: 2.5rem;
+     }
+     section#landpage h1{
+        font-size: 3.5rem;
+     }
+     div.logoMaior{
+        display: none;
+     }
+     #box-formacao h1{
+        font-size: 1.5rem;
+
+     }
+     #box-formacao .card1, #box-habilidade .card3{
+        font-size: 0.8rem;
+    
+    }
+    #box-habilidade .card3 h1, #box-habilidade .card3 h3, #box-habilidade .card2 h1, .container-sobre div#txt-sobre{
+        font-size: 1rem;
+    }
+    #box-habilidade .card2, #box-habilidade .card3{
+        width: 83%;
+    }
+    .container-html{
+        width: 30%;
+    }
+    .box-caixa2 img{
+        width: 80%;
+
+    }
+}
+@media(max-width: 800px){
     nav{
         position: none;
     }
@@ -68,75 +108,22 @@ i.bi-list{
         font-size: 29px;
     cursor: pointer;
     }
-
-}
-/* RESPONSIVIDIDADE INDEX HTLM */
-@media(max-width:500px){
-   
-    section#landpage h3{
-        font-size: 2.5rem;
-     }
-     section#landpage h1{
-        font-size: 3.5rem;
-     }
-     div.logoMaior{
-        display: none;
-     }
-     #box-formacao h1{
-        font-size: 1.5rem;
-
-     }
-     #box-formacao .card1, #box-habilidade .card3{
-        font-size: 0.8rem;
-    
-    }
-    #box-habilidade .card3 h1, #box-habilidade .card3 h3, #box-habilidade .card2 h1, .container-sobre div#txt-sobre{
-        font-size: 1rem;
-    }
-    #box-habilidade .card2, #box-habilidade .card3{
-        width: 83%;
-    }
-    .container-html{
-        width: 30%;
-
-    }
-    .box-caixa2 img{
-        width: 80%;
-        /* flex-direction: row; */
-    }
-}
-@media(max-width: 800px){
     section#landpage{
-        height: 100vh;
-    
+        flex-wrap: wrap;
+        margin: auto;
+        }
+        div.logoMaior{
+            margin-top: 0;
         }
     div.logoPequena img{
         margin-left: 30px;
         padding: 0;
     }
 
-  div.introducao{
-    /* width: 100vw; */
-    margin-left: 0px;
-    margin-top: 200px;
-  }
- 
-  div.logoMaior{
-    margin-top:1rem;
-
-  }
-  div.logoMaior img{
-    /* margin-top:0px; */
-    width: 50%;
-
-  }
   .box-img img{
     width:150px;
 }
-div.container-sobre{
-    flex-direction: column;
-    margin:10px;
-}
+
 #box-habilidade{
     margin: 0;
     height: auto;
@@ -167,6 +154,13 @@ div.box-btn-sobre{
 footer{
     font-size: 1.2rem;
     }
+}
+@media (max-width:980px){
+    div.container-sobre{
+        flex-direction: column;
+
+    }
+  
 }
 /* RESPOSIVIDADE PROJETOS.HTML */
 @media (max-width:900px){

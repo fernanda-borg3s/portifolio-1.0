@@ -1,5 +1,5 @@
 # Meu Portifólio 
-# Disponível no link: https://fernandaborges-portifolio.netlify.app/
+# Disponível no link: https://fernandaborges.netlify.app/
 <p>Portifólio desenvolvido com HTML5, CSS3, e JavaScript Puro</p>
 <img src="https://user-images.githubusercontent.com/91858227/205519545-e41d49ba-d6ef-4020-95c4-845932929f60.png" width="700px"/>
 
